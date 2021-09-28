@@ -1,0 +1,33 @@
+<style>
+    .bat{
+        height: 100px;
+        width:100px;
+        transition: transform .2s;
+
+    }
+    .bat:hover{
+        transform: rotate(50deg);
+        
+    }
+    .ball{
+        height: 50px;
+        width: 50px;
+        background-color: darkred;
+        border-radius: 50%;
+        position: relative;
+        left: 200px;
+        transition: transform .2s ease-in-out .2s;
+    }
+    .field:hover .ball{
+        transform: translate(1000px, -200px);
+    }
+</style>
+
+<body>
+    <div class="field">
+        <img src="7.jpg" alt="donno" class="bat">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>

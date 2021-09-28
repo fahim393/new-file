@@ -1,0 +1,51 @@
+<style>
+    @keyframes style {
+        0%{
+            left: 0;
+            top: 0;
+        }
+        50%{
+            left: 400px;
+            top: 150px;
+            background-color: cyan;
+        }
+        65%{
+            left: 500px;
+            top: 300px;
+            background-color: darkorchid;
+        75%{
+            left: 500px;
+            top: 300px;
+            background-color: darkorchid;
+        }
+        100%{
+            left: 800px;
+            top: 0;
+            background-color: darkorange;
+        }
+        
+    }
+    .stage{
+        background-color: cornflowerblue;
+        
+        min-width: 800px;
+        height: 200px;
+    }
+    .ball{
+        height: 50px;
+        width: 50px;
+        border-radius:50% ;
+        background-color: crimson;
+        position: absolute;
+    }
+    .stage:hover .ball{
+        animation: style 2s ease-in-out 1s infinite alternate-reverse ;
+    }
+</style>
+
+
+<div class="stage">
+    <div class="ball">
+
+    </div>
+</div>

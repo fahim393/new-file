@@ -1,0 +1,51 @@
+<style>
+    @keyframes slidein {
+        0%{
+            left: 0;
+            top: 0;
+        }
+        50%{
+            left: 200px;
+            top: 200px;
+            background-color: orange;
+        }
+        70%{
+            left: 300px;
+            top: 200px;
+            background-color: orange;
+        }
+        80%{
+            left: 400px;
+            top: 200px;
+            background-color: orange;
+        100%{
+            left: 800px;
+            top: 0;
+            background-color: slategrey;
+        }
+    }
+    .stage{
+        background-color: rgb(20, 255, 39);
+        height: 200px;
+        min-width: 800px;
+
+    }
+    .ball{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: firebrick;
+        position: absolute;
+    }
+    .stage:hover .ball{
+        animation: slidein 2s ease-in-out 1s infinite alternate;
+    }
+
+</style>
+<body>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>

@@ -1,0 +1,48 @@
+<style>
+    @keyframes style {
+        0%{
+            left: 0;
+            top: 0;
+        }
+        25%{
+            left: 200px;
+            top: 100px;
+        }
+        50%{
+            left: 400px;
+            top: 300px;
+        }
+        75%{
+            left: 600px;
+            top: 500px;
+        }
+        80%{
+            left: 300px;
+            top: 600px;
+        }
+        100%{
+            left: 800px;
+            top: 0;
+        }
+        
+    }
+    .stage{
+        background-color: cornflowerblue;
+        height: 600px;
+        min-width: 800px;
+    }
+    .box{
+        height: 50px;
+        width:50px;
+        border-radius:50% ;
+        background-color: red;
+        position: absolute;
+    }
+    .stage:hover .box{
+        animation: style 2s ease-in-out 1s infinite alternate;
+    }
+</style>
+
+<div class="stage">
+    <div class="box"></div>
+</div>
